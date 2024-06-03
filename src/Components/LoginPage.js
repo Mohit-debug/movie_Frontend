@@ -38,7 +38,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user/login', {
+      const response = await axios.post('urn:ietf:wg:oauth:2.0:oob/api/user/login', {
       
           email: formData?.email,
           password: formData?.password

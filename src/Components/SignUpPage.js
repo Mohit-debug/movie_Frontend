@@ -26,7 +26,7 @@ const SignUpPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/user/signup', formData);
+      const response = await axios.post('urn:ietf:wg:oauth:2.0:oob/api/user/signup', formData);
       console.log({response});
       // Handle success (e.g., redirect to login page or show success message)
       navigate('/');
